@@ -7,68 +7,32 @@ let papel = 2;
 let tijera = 3;
 
 
-if (jugadorUno == piedra){
+jugadorDos == 1 ? alert("La maquina jugó piedra") : false
+jugadorDos == 2 ? alert("La maquina jugó papel") : false
+jugadorDos == 3 ? alert("La maquina jugó tijera") : false
 
-    if(jugadorDos == piedra){
 
-        let jugada = alert(`el jugador 2 eligio piedra`);
+if(((jugadorUno == piedra) && (jugadorDos == tijera)) || 
+((jugadorUno == papel) && (jugadorDos == piedra)) || 
+((jugadorUno == tijera) && (jugadorDos == papel)) ){
+
+    document.write("jugador Uno gana");
+}
+
+if(((jugadorDos == piedra) && (jugadorUno == tijera)) || 
+((jugadorDos == papel) && (jugadorUno == piedra)) || 
+((jugadorDos == tijera) && (jugadorUno == papel)) ){
+
+    document.write("jugador Dos gana");
+}
+
+
+    if (jugadorUno == jugadorDos){
         document.write("empate");
 
     }
-    else if(jugadorDos == papel) 
-    {
-        let jugada = alert(`el jugador 2 eligio papel`);
-        document.write("jugador dos gana");
-    }
-    else if(jugadorDos == tijera) 
-    {
-        let jugada = alert(`el jugador 2 eligio tijera`);
-        document.write("jugador uno gana");
-    }
+   
   
   
-}
 
-if (jugadorUno == papel){
 
-    if(jugadorDos == piedra){
-        let jugada = alert(`el jugador 2 eligio piedra`);
-        document.write("jugador uno gana");
-
-    }
-    else if(jugadorDos == papel) 
-    {
-        let jugada = alert(`el jugador 2 eligio papel`);
-        document.write("empate");
-    }
-    else if(jugadorDos == tijera) 
-    {
-        let jugada = alert(`el jugador 2 eligio tijera`);
-        document.write("jugador dos gana");
-    }
-  
-  
-}
-
-if (jugadorUno == tijera){
-
-    if(jugadorDos == piedra){
-        let jugada = alert(`el jugador 2 eligio piedra`);
-        document.write("jugador dos gana");
-      
-
-    }
-    else if(jugadorDos == papel) 
-    {
-        let jugada = alert(`el jugador 2 eligio papel`);
-        document.write("jugador uno gana");
-    }
-    else if(jugadorDos == tijera) 
-    {
-        let jugada = alert(`el jugador 2 eligio tijera`);
-        document.write("empate");
-        
-    }
-  
-  
-}
